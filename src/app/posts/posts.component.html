@@ -1,0 +1,27 @@
+<table>
+    <tr>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Course</th>
+      <th>Posted On</th>
+      <th>Delete</th>
+    </tr>
+    <tr *ngFor="let post of posts">
+      <td>
+        {{post.id}}
+      </td>
+      <td>
+        {{post.title}}
+      </td>
+      <td>
+        {{post.course}}
+      </td>
+      <td>
+        {{post.postedOn}}
+      </td>
+      <td>
+        <button class= 'btn btn-info' (click)="deletePost(post.id)"> Delete </button>
+      </td>
+    </tr>
+  </table>
+  <button style="background-color:#4CAF50; padding:20px;" (click)="addNewPost()">Add new post</button>

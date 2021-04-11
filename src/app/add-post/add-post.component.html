@@ -1,0 +1,7 @@
+<form #myForm="ngForm" role="form" (ngSubmit)="addPost(myForm.value)">
+    SNo: <input name="sno" type="number" ngModel> <br>
+    Title: <input name="title" type="text" ngModel> <br>
+    Course: <input name="course" type="text" ngModel> <br>
+    Posted On: <input name="postedOn" type="text" ngModel> <br>
+    <input type="submit" value="Add Post" />
+</form>
